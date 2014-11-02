@@ -14,7 +14,7 @@ public class main {
 	//Connect to Master
 	master.connect();
 	
-	
+	//LOGAN IS A FURRY KING
 	}
 	
 	
