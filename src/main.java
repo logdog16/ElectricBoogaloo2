@@ -32,5 +32,8 @@ public class main {
 	
 	}
 	
-	
+	private int SalinityCalc(double volts)
+	{
+		
+	}
 }
