@@ -1,7 +1,7 @@
 import rxtxrobot.ArduinoNano;
 import rxtxrobot.RXTXRobot;
 
-public class Main {
+public class main {
 	
 	
 		
@@ -50,7 +50,63 @@ public class Main {
 			
 					
 		} 
-		r1.runMotor(RXTXRobot.MOTOR1, 200, RXTXRobot.MOTOR2, 200, 3000);
+		//Back To start
+		r1.runMotor(RXTXRobot.MOTOR1, -200, RXTXRobot.MOTOR2, -200, 3000);
+		
+		//Turn right
+		r1.runMotor(RXTXRobot.MOTOR1, -100, RXTXRobot.MOTOR2, 100, 0);
+		r1.sleep(1000);
+		
+		
+		//Booggie and Wiggle till go balls to the wall
+		r1.runMotor(RXTXRobot.MOTOR1, 80, RXTXRobot.MOTOR2, 100, 0);
+		r1.sleep(1000);
+		r1.runMotor(RXTXRobot.MOTOR1, 100, RXTXRobot.MOTOR2, 80, 0);
+		r1.sleep(1000);
+		r1.runMotor(RXTXRobot.MOTOR1, 80, RXTXRobot.MOTOR2, 100, 0);
+		r1.sleep(1000);
+		r1.runMotor(RXTXRobot.MOTOR1, 100, RXTXRobot.MOTOR2, 80, 0);
+		r1.sleep(1000);
+		r1.runEncodedMotor(RXTXRobot.MOTOR1, 0, 0, RXTXRobot.MOTOR2, 0, 0);
+		
+		//Pull out!
+		r1.runMotor(RXTXRobot.MOTOR1, -100, RXTXRobot.MOTOR2, -100, 0);
+		r1.sleep(1000);
+		
+		
+		
+		//Turn dat ass around 
+		r1.runMotor(RXTXRobot.MOTOR1, -100, RXTXRobot.MOTOR2, 100, 0);
+		r1.sleep(2000);
+
+			
+		//Booggie and Wiggle till go balls to the wall
+		r1.runMotor(RXTXRobot.MOTOR1, 80, RXTXRobot.MOTOR2, 100, 0);
+		r1.sleep(1000);
+		r1.runMotor(RXTXRobot.MOTOR1, 100, RXTXRobot.MOTOR2, 80, 0);
+		r1.sleep(1000);
+		r1.runMotor(RXTXRobot.MOTOR1, 80, RXTXRobot.MOTOR2, 100, 0);
+		r1.sleep(1000);
+		r1.runMotor(RXTXRobot.MOTOR1, 100, RXTXRobot.MOTOR2, 80, 0);
+		r1.sleep(1000);
+		r1.runEncodedMotor(RXTXRobot.MOTOR1, 0, 0, RXTXRobot.MOTOR2, 0, 0);
+			
+		//Pull out!
+		r1.runMotor(RXTXRobot.MOTOR1, -100, RXTXRobot.MOTOR2, -100, 0);
+		r1.sleep(1000);
+		
+		
+		//Go back to start
+		r1.runMotor(RXTXRobot.MOTOR1, -100, RXTXRobot.MOTOR2, -100, 0);
+		r1.sleep(2000);
+		
+		//Go Across Bridge (Center)
+		r1.runMotor(RXTXRobot.MOTOR1, 500, RXTXRobot.MOTOR2, 500, 0);
+		r1.sleep(6000);
+		
+		//Turn dat ass 
+		r1.runMotor(RXTXRobot.MOTOR1, -100, RXTXRobot.MOTOR2, 100, 0);
+		r1.sleep(2000);
 	//r1.close();
 	//r2.close();
 		
